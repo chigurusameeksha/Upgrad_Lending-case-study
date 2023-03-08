@@ -1,48 +1,44 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case Study
+> This project aims to perform EDA to understand risky loan applicants to avoid defaults.
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+- [Lending Club Case Study](#lending-club-case-study)
+  - [Table of Contents](#table-of-contents)
+  - [General Information](#general-information)
+    - [Business Context](#business-context)
+    - [Problem Statement](#problem-statement)
+  - [Technologies Used](#technologies-used)
+  - [Conclusions](#conclusions)
+  - [Contact](#contact)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+### Business Context
+There is a consumer finance company which specialises in lending various types of loans to1 urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Once the application is accepted and the loan has to be sanctioned. The risk associated with that is either borrower will repay the amount in installments (both principal and interst) completely or can default leading to credit loss for the company.
+### Problem Statement
+Identify the risky loan applicants, so that such loans can be reduced thereby cutting down the amount of credit loss. Identification of such applicants using EDA is the aim of this case study. Also, company wants to understand the driving factors (or driver variables) behind loan default. i.e., the variables which strong indicators of default. Two types of risks are associated with the bank’s decision:</br>
+1. If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
+2. If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- python 3.8.16
+  - numpy==1.24.2
+  - pandas==1.5.3
+  - matplotlib==3.7.1
+  - seaborn==0.12.2
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+## Conclusions
+- There are around 50% of properties presented in dataset which have all NULL values
+- There are numerous non-essential arrtibutes or columns with predominantly NA or single values.
+- Maximum defaulters are either not verified in the annual income range of $30,000 - $60,000
+- Employees having service more than 10+ years have taken the Most Medium Interest rate Loans and Maximum defaulters are in Medium Interest rate i.e. between 10 to 18%.
+- Applicants who could not grow professionally in terms of Annual income as compared to Work Experience peak the defaulters list
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@chigurusameeksha] and [@ankurdhuriya]
 
 
 <!-- Optional -->
